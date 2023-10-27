@@ -1,0 +1,21 @@
+/* 네비게이션 바 스타일 */
+.navbar {
+    background-color: #4CAF50; /* 초록색 */
+    overflow: hidden;
+}
+
+/* 네비게이션 바 항목 스타일 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* 항목에 마우스를 올렸을 때의 스타일 */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
