@@ -1,1 +1,7 @@
-{"0":{"Unnamed: 0":"Dog","Unnamed: 1":"dog"},"1":{"Unnamed: 0":"Cat","Unnamed: 1":"cat"},"2":{"Unnamed: 0":"Guppy","Unnamed: 1":"guppy"},"3":{"Unnamed: 0":"Tiger","Unnamed: 1":"tiger"},"4":{"Unnamed: 0":"Lion","Unnamed: 1":"lion"}}
+{
+    "Dog": "dog",
+    "Cat": "cat",
+    "Guppy": "guppy",
+    "Tiger": "tiger",
+    "Lion": "lion"
+}
