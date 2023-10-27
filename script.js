@@ -13,6 +13,10 @@ fetch('data.json')
     });
 
 function searchKeyword() {
+    if (!data || Object.keys(data).length === 0) {
+        document.getElementById('result').innerText = "데이터 로딩 중입니다. 잠시만 기다려주세요.";
+        return;
+    }
     const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
     const result = data[searchInput];
 
