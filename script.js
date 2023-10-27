@@ -1,11 +1,13 @@
-const data = {
-    "apple": "사과",
-    "banana": "바나나",
-    "cherry": "체리"
+let data = {
+    "Dog": "dog",
+    "Cat": "cat",
+    "Cow": "cow",
+    "Pet": "pet"
+    
 };
 
 function searchKeyword() {
-    const searchInput = document.getElementById('searchInput').value;
+    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();  // 입력 값을 소문자로 변환
     const result = data[searchInput];
 
     if (result) {
