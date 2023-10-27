@@ -1,9 +1,3 @@
-const data = {
-    "apple": "사과",
-    "banana": "바나나",
-    "cherry": "체리"
-};
-
 function searchKeyword() {
     const searchInput = document.getElementById('searchInput').value;
     const result = data[searchInput];
