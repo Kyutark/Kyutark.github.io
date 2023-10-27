@@ -4,23 +4,8 @@ const data = {
     "cherry": "체리"
 };
 
-// JSON 데이터 로드
-fetch('data.json')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
-    .then(json => {
-        data = json;
-    })
-    .catch(error => {
-        console.error("Error loading JSON data:", error);
-    });
-
 function searchKeyword() {
-    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();  // 입력 값을 소문자로 변환
+    const searchInput = document.getElementById('searchInput').value;
     const result = data[searchInput];
 
     if (result) {
