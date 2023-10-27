@@ -8,7 +8,7 @@ app.use(express.static('public')); // 'public' 디렉터리에 index.html을 저
 
 app.get('/search', (req, res) => {
     const searchTerm = req.query.term;
-    const workbook = xlsx.readFile('path_to_excel_file.xlsx'); // 여기에 실제 엑셀 파일 경로를 입력하세요.
+    const workbook = xlsx.readFile('dbbdb.xlsx'); // 여기에 실제 엑셀 파일 경로를 입력하세요.
     const sheet = workbook.Sheets[workbook.SheetNames[0]];
     const data = xlsx.utils.sheet_to_json(sheet);
 
