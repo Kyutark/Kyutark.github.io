@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Data</title>
-    <style>
-        /* 검색 영역 스타일 */
-        .search-container {
-            margin: 20px;
-        }
-    </style>
+    <title>검색 시스템</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- 검색 영역 -->
     <div class="search-container">
-        <input type="text" id="searchInput" placeholder="검색어를 입력하세요">
-        <button id="searchButton" onclick="searchKeyword()" disabled>검색</button>
-        <p id="result"></p>
+        <input type="text" id="searchInput" placeholder="키워드 입력">
+        <button onclick="searchKeyword()">검색</button>
     </div>
+    <div id="result"></div>
 
     <script src="script.js"></script>
 </body>
-
 </html>
