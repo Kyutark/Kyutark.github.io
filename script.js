@@ -1,13 +1,14 @@
 let data = {
-    "Dog": "dog",
-    "Cat": "cat",
-    "Cow": "cow",
-    "Pet": "pet"
-    
+    "dog": "Dog",
+    "cat": "Cat",
+    "guppy": "Guppy",
+    "tiger": "Tiger",
+    "lion": "Lion"
+    // ... 추가적으로 필요한 데이터는 이곳에 넣으실 수 있습니다.
 };
 
 function searchKeyword() {
-    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();  // 입력 값을 소문자로 변환
+    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
     const result = data[searchInput];
 
     if (result) {
