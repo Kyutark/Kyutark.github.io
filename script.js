@@ -1,4 +1,8 @@
-let data = {};
+const data = {
+    "apple": "사과",
+    "banana": "바나나",
+    "cherry": "체리"
+};
 
 // JSON 데이터 로드
 fetch('data.json')
