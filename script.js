@@ -11,7 +11,7 @@ fetch('data.json')
     });
 
 function searchKeyword() {
-    const searchInput = document.getElementById('searchInput').value;
+    const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
     const result = data[searchInput];
 
     if (result) {
