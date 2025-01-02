@@ -6,6 +6,7 @@ This repository contains a [Hugo](https://github.com/gohugoio/hugo) template to 
 
 The template is documented at https://pascalmichaillat.org/d5/.
 
+
 ## Illustration
 
 The website produced by the template can be viewed at https://pascalmichaillat.org/hugo-website/.
