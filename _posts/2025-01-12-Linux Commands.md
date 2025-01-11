@@ -2,11 +2,11 @@
 title: Linux Commands
 author: Kyutark
 date: 2025-01-12 00:04:00 +0900
-categories: [CS]
-tags: [bioinformatics]
+categories: [STUDY]
+tags: [bioinformatics, CS]
 ---
 These are the commands I tend to use on Linux servers, such as _eevee_ in CSBL.
-EEVEE![[Pasted image 20250112015856.png|30x30]]has the unique ability to evolve into eight different creatures: Sylveon, Umbreon, Espeon, Leafeon, Glaceon, Vaporeon, Jolteon, or Flareon.
+EEVEE has the unique ability to evolve into eight different creatures: Sylveon, Umbreon, Espeon, Leafeon, Glaceon, Vaporeon, Jolteon, or Flareon.
 
 #### 1. cd (change directory)
 **examples :**
@@ -55,7 +55,6 @@ EEVEE![[Pasted image 20250112015856.png|30x30]]has the unique ability to evolve 
 - `ls -alh`: Show all files, detailed information, and sizes in a human-readable format.
 
 #### 7. cat (concatenate)
-_"nano"만 주구장창사용 중..ㅜ_
 **options :**
  - `-n`: Display line numbers.
  - `-E`: Show `$` at the end of each line.
