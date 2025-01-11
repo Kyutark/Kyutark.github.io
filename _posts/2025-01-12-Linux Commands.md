@@ -5,97 +5,82 @@ date: 2025-01-12 00:04:00 +0900
 categories: [CS]
 tags: [bioinformatics]
 ---
+These are the commands I tend to use on Linux servers, such as _eevee_ in CSBL.
+EEVEE![[Pasted image 20250112015856.png|30x30]]has the unique ability to evolve into eight different creatures: Sylveon, Umbreon, Espeon, Leafeon, Glaceon, Vaporeon, Jolteon, or Flareon.
 
-# 1. ls (리스트 디렉토리 내용)
- -a : 숨김 파일 포함 모든 파일 표시
- -l : 파일 정보를 상세히 표시
- -h : 사람이 읽기 쉬운 형식으로 파일 크기 표시
- -R : 하위 디렉토리까지 재귀적으로 표시
- -t : 최신 수정일 순으로 정렬
+#### 1. cd (change directory)
+**examples :**
+- `cd ..`:  Move to the parent directory.
+- `cd ~`: Move to the home directory.
+- `cd -`: Move to the previous directory.
 
-# 2. cd (디렉토리 이동)
- cd .. : 상위 디렉토리로 이동
- cd ~ : 사용자의 홈 디렉토리로 이동
- cd - : 이전 디렉토리로 이동
+#### 2. mkdir (make directory)
+**options :**
+-  `-p`: Create parent directories as needed.
+**examples :**
+- `mkdir [folder]`: Creat a directory named `forder`.
+- `mkdir -p [parent]/[child]`: Create the `child` directory along with the `parent` if it doesn't exist.
 
-# 3. cp (파일/디렉토리 복사)
- -r : 디렉토리를 재귀적으로 복사
- -i : 덮어쓰기 전에 확인 요청
- -u : 더 최신 파일만 복사
- -p : 원본 파일의 속성(권한, 소유권, 타임스탬프) 유지
+#### 3. rm (remove)
+**options :**
+- `-r`: Recursively delete directories and their contents.
+- `-f`: Force deletion without confirmation.
+- `-i`: Prompt before deleting.
+**examples :**
+- `rm [file.txt]`: Delete `file.txt`.
+- `rm -rf [folder]`: Forcefully delete the `folder` directory and its contents
 
-# 4. mv (파일/디렉토리 이동/이름 변경)
- -i : 덮어쓰기 전에 확인 요청
- -u : 더 최신 파일만 이동
- -v : 명령어 실행 과정을 자세히 출력
+#### 4. rmdir (remove directory)
+**options :**
+- `--ignore-fail-on-non-empty`: Ignore errors if the directory is not empty.
+**examples :**
+ - `rmdir [empty_folder]`: Remove an empty directory named `empty_folder`
 
-# 5. rm (파일/디렉토리 삭제)
- -r : 디렉토리를 재귀적으로 삭제
- -f : 강제로 삭제 (확인 없이)
- -i : 삭제 전 확인 요청
+#### 5. mv (move, or rename files or directories)
+**options :**
+ - `-i`: Prompt before overwriting files.
+ - `-u`: Move only newer files.
+ - `-v`: Show details of the operation.
+**examples :**
+- `mv [file.txt] /destination/`: Move `file.txt` to the `destination` directory
+- `mv [old_name.txt] [new_name.txt]`: Rename `old_name.txt` to `new_name.txt`
 
-# 6. df (디스크 사용량 확인)
- -h : 사람이 읽기 쉬운 형식으로 출력
- -T : 파일 시스템 타입 포함
- -t [타입] : 특정 파일 시스템 타입만 표시
- -x [타입] : 특정 파일 시스템 타입 제외
- -i : inode 정보를 표시
+#### 6. ls (list directory contents)
+**options :**
+- `-a`: Show all files, including hidden ones.
+- `-l`: Display detailed file information (permissions, owner size, modification time).
+- `-h`: Display sizes in a human-readable format.
+- `-R`: Recursively list subdirectories.
+**examples :**
+- `ls -alh`: Show all files, detailed information, and sizes in a human-readable format.
 
-# 7. du (디렉토리/파일 크기 확인)
- -h : 사람이 읽기 쉬운 형식으로 출력
- -a : 모든 파일과 디렉토리 크기 표시
- -s : 총합만 출력
- -d [깊이] : 디렉토리 깊이 지정
+#### 7. cat (concatenate)
+_"nano"만 주구장창사용 중..ㅜ_
+**options :**
+ - `-n`: Display line numbers.
+ - `-E`: Show `$` at the end of each line.
+**examples :**
+- `cat [file.txt]`: Display the contents of `file.txt`.
+- `cat [file1.txt] [file2.txt] > [merged_file.txt]`: Merge two files into one.
+- `cat -n [file.txt]`: Display the contents of `file.txt` with line numbers.
 
-# 8. grep (텍스트 검색)
- -i : 대소문자 구분 없이 검색
- -r : 하위 디렉토리까지 재귀적으로 검색
- -v : 매칭되지 않는 라인 출력
- -n : 라인 번호 함께 출력
- -c : 매칭된 라인의 개수 출력
+#### 8. nano
+**options :**
+- `-m`: Enable mouse support
+- `-v`: Open files in read-only mode.
+- `-B`: create
+**examples :**
+- `nano [file.txt]`: Open `file.txt` for editing.
+- `nano -v [file.txt]`: Open `file.txt` in read-only mode.
+- `nano -m [file.txt]`: Enable mouse support while editing `file.txt`.
 
-# 9. find (파일/디렉토리 검색)
- -name [이름] : 특정 이름의 파일 검색
- -type [f/d] : 파일(f) 또는 디렉토리(d) 검색
- -size [크기] : 특정 크기 이상의 파일 검색
- -mtime [-/+] : 특정 날짜(-: 이후, +: 이전) 수정된 파일 검색
- -exec [명령] : 검색된 결과에 특정 명령 실행
-
-# 10. chmod (파일/디렉토리 권한 변경)
- -R : 하위 디렉토리까지 재귀적으로 변경
- 숫자 권한 설정 예: chmod 755 파일명 (소유자 읽기/쓰기/실행, 그룹과 다른 사용자 읽기/실행)
-
-# 11. chown (파일/디렉토리 소유권 변경)
- -R : 하위 디렉토리까지 재귀적으로 변경
- 예: chown 사용자:그룹 파일명
-
-# 12. ps (프로세스 상태 확인)
- -e : 모든 프로세스 표시
- -f : 프로세스 상세 정보 표시
- -u [사용자] : 특정 사용자의 프로세스 표시
- -aux : 현재 실행 중인 모든 프로세스 표시 (광범위)
-
-# 13. kill (프로세스 종료)
- -9 [PID] : 프로세스를 강제 종료
- kill -l : 사용 가능한 모든 신호 목록 출력
-
-# 14. tar (아카이브 생성/해제)
- -c : 아카이브 생성
- -x : 아카이브 해제
- -z : gzip 사용
- -v : 처리되는 파일을 상세히 출력
- -f : 파일 이름 지정
- 예시:
-```
-bash
-코드 복사
-tar -czvf archive.tar.gz 파일/디렉토리
-tar -xzvf archive.tar.gz
-```
-
-# 15. apt (패키지 관리 - Ubuntu 기준)
- update : 패키지 목록 업데이트
- upgrade : 설치된 패키지 업그레이드
- install [패키지명] : 패키지 설치
- remove [패키지명] : 패키지 제거
- search [키워드] : 패키지 검색
+#### 9. python 3
+**options :**
+- `-v` or `--version`: Check the Python version.
+- `-c [code]`: Execute a single line of Python code.
+- `-m [module]`: Run a specific Python module.
+- `--help`: Display help for Python commands.
+**examples :**
+- `python3 -V`: Check the Python 3 version.
+- `python3 -c "print('Hello World!)"`: Execute a single line of code.
+- `python3 [script.py]`: Run the `script.py` file.
