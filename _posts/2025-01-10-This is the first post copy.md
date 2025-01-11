@@ -6,6 +6,4 @@ categories: [PROJECT]
 tags: [bioinformatics]
 ---
 
-
-Hello.
-I am Kyutark Kim, and this is the first post.
+copy?
