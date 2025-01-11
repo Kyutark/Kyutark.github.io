@@ -67,7 +67,8 @@ EEVEE has the unique ability to evolve into eight different creatures: Sylveon, 
 **options :**
 - `-m`: Enable mouse support
 - `-v`: Open files in read-only mode.
-- `-B`: create
+- `-B`: create a backup of the file.
+- `-C [directory]`: Save backup files in a specific directory.
 **examples :**
 - `nano [file.txt]`: Open `file.txt` for editing.
 - `nano -v [file.txt]`: Open `file.txt` in read-only mode.
@@ -80,6 +81,6 @@ EEVEE has the unique ability to evolve into eight different creatures: Sylveon, 
 - `-m [module]`: Run a specific Python module.
 - `--help`: Display help for Python commands.
 **examples :**
-- `python3 -V`: Check the Python 3 version.
+- `python3 -v`: Check the Python 3 version.
 - `python3 -c "print('Hello World!)"`: Execute a single line of code.
 - `python3 [script.py]`: Run the `script.py` file.
