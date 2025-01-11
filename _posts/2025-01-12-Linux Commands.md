@@ -1,6 +1,5 @@
 ---
 title: Linux Commands
-author: Kyutark
 date: 2025-01-12 00:04:00 +0900
 categories: [STUDY]
 tags: [CS]
