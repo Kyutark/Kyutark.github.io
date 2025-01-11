@@ -3,9 +3,10 @@ title: Linux Commands
 author: Kyutark
 date: 2025-01-12 00:04:00 +0900
 categories: [STUDY]
-tags: [bioinformatics, CS]
+tags: [CS]
 ---
 These are the commands I tend to use on Linux servers, such as _eevee_ in CSBL.
+
 EEVEE has the unique ability to evolve into eight different creatures: Sylveon, Umbreon, Espeon, Leafeon, Glaceon, Vaporeon, Jolteon, or Flareon.
 
 #### 1. cd (change directory)
