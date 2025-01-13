@@ -15,7 +15,7 @@ EEVEE has the unique ability to evolve into eight different creatures: Sylveon, 
 
 #### 2. mkdir (make directory)
 **options :**
--  `-p`: Create parent directories as needed.   
+- `-p`: Create parent directories as needed. 
 **examples :**
 - `mkdir [folder]`: Creat a directory named `forder`.
 - `mkdir -p [parent]/[child]`: Create the `child` directory along with the `parent` if it doesn't exist.
@@ -24,14 +24,14 @@ EEVEE has the unique ability to evolve into eight different creatures: Sylveon, 
 **options :**
 - `-r`: Recursively delete directories and their contents.
 - `-f`: Force deletion without confirmation.
-- `-i`: Prompt before deleting.   
+- `-i`: Prompt before deleting.  
 **examples :**
 - `rm [file.txt]`: Delete `file.txt`.
 - `rm -rf [folder]`: Forcefully delete the `folder` directory and its contents
 
 #### 4. rmdir (remove directory)
 **options :**
-- `--ignore-fail-on-non-empty`: Ignore errors if the directory is not empty.   
+- `--ignore-fail-on-non-empty`: Ignore errors if the directory is not empty.  
 **examples :**
  - `rmdir [empty_folder]`: Remove an empty directory named `empty_folder`
 
@@ -39,7 +39,7 @@ EEVEE has the unique ability to evolve into eight different creatures: Sylveon, 
 **options :**
  - `-i`: Prompt before overwriting files.
  - `-u`: Move only newer files.
- - `-v`: Show details of the operation.   
+ - `-v`: Show details of the operation.  
 **examples :**
 - `mv [file.txt] /destination/`: Move `file.txt` to the `destination` directory
 - `mv [old_name.txt] [new_name.txt]`: Rename `old_name.txt` to `new_name.txt`
@@ -49,14 +49,14 @@ EEVEE has the unique ability to evolve into eight different creatures: Sylveon, 
 - `-a`: Show all files, including hidden ones.
 - `-l`: Display detailed file information (permissions, owner size, modification time).
 - `-h`: Display sizes in a human-readable format.
-- `-R`: Recursively list subdirectories.   
+- `-R`: Recursively list subdirectories.  
 **examples :**
 - `ls -alh`: Show all files, detailed information, and sizes in a human-readable format.
 
 #### 7. cat (concatenate)
 **options :**
  - `-n`: Display line numbers.
- - `-E`: Show `$` at the end of each line.   
+ - `-E`: Show `$` at the end of each line.  
 **examples :**
 - `cat [file.txt]`: Display the contents of `file.txt`.
 - `cat [file1.txt] [file2.txt] > [merged_file.txt]`: Merge two files into one.
@@ -67,7 +67,7 @@ EEVEE has the unique ability to evolve into eight different creatures: Sylveon, 
 - `-m`: Enable mouse support
 - `-v`: Open files in read-only mode.
 - `-B`: create a backup of the file.
-- `-C [directory]`: Save backup files in a specific directory.   
+- `-C [directory]`: Save backup files in a specific directory.  
 **examples :**
 - `nano [file.txt]`: Open `file.txt` for editing.
 - `nano -v [file.txt]`: Open `file.txt` in read-only mode.
@@ -78,7 +78,7 @@ EEVEE has the unique ability to evolve into eight different creatures: Sylveon, 
 - `-v` or `--version`: Check the Python version.
 - `-c [code]`: Execute a single line of Python code.
 - `-m [module]`: Run a specific Python module.
-- `--help`: Display help for Python commands.   
+- `--help`: Display help for Python commands.  
 **examples :**
 - `python3 -v`: Check the Python 3 version.
 - `python3 -c "print('Hello World!)"`: Execute a single line of code.
