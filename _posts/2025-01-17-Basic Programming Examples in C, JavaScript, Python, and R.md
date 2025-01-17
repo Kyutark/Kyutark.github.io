@@ -15,7 +15,7 @@ These scripts demonstrate basic programming concepts:
 - **Loops**
 - **Conditional Statements**
 
-```C
+```c
 #include <stdio.h>
 
 void gugudan(int n) {
@@ -36,7 +36,7 @@ int main() {
 }
 ```
 
-```JavaScript
+```javascript
 function gugudan(n) {
     for (let i = 1; i <= 9; i++) {
         console.log(`${n} x ${i} = ${n * i}`);
@@ -51,7 +51,7 @@ if (n >= 1 && n <= 9) {
 }
 ```
 
-```Python
+```python
 def gugudan(n):
     for i in range(1, 10):
         print(f"{n} x {i} = {n * i}")
@@ -63,7 +63,7 @@ else:
     print("Please enter a number between 1 and 9.\n")
 ```
 
-```R
+```r
 gugudan <- function(n) {
     for (i in 1:9) {
         cat(n, "x", i, "=", n * i, "\n")
