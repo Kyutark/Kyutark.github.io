@@ -6,7 +6,7 @@ tags: [CS,JS,C,R,Python]
 ---
 
 These scripts take a number from the user and checks if it's between 1 and 9.
-If valid, the function prints the multiplication table for that number using a loop.
+If valid, the function print the multiplication table for that number using a loop.
 If not, it shows a warning message.
 
 These scripts demonstrate basic programming concepts:
