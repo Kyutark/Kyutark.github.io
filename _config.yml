@@ -16,7 +16,7 @@ timezone:
 
 title: Kyutark # the main title
 
-tagline: 일을 도모함에 있어 쉽게 되기를 바라지 말라. 일의 어려움을 안락으로 삼으라. # it will display as the subtitle
+tagline: Do not seek ease in accomplishing tasks; find solace in their difficulty. # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -38,10 +38,10 @@ social:
   email: kyutkim01@korea.ac.kr # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/Kyutark # change to your Twitter homepage
+    - https://www.instagram.com/kyutkim01/ # change to your Twitter homepage
     - https://github.com/Kyutark # change to your GitHub homepage
     # Uncomment below to add more social links
-    - https://www.instagram.com/kyutkim01/
+    #- https://www.instagram.com/kyutkim01/
     # - https://www.linkedin.com/in/username
 
 # Site Verification Settings
